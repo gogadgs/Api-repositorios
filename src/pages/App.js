@@ -14,17 +14,17 @@ const [repositorioAtual , selecionandoReposAtual] =  useState('');
   
 const procurandoRepositorioUsuario = async ()=>{
 
-  const {dados} =  await api.get(`/repos/${repositorioAtual}`)
+  const {data} =  await api.get(`/repos/${repositorioAtual}`)
 
 
-  if (dados.id){ 
+  if (data.id){ 
     
-    const repositorioExiste = repositorios.find(repositorio => repositorio.id === dados.id)
+    const repositorioExiste = repositorios.find(repositorio => repositorio.id === data.id)
 
     if(!repositorioExiste){
     
-    selecionandorepositorios( prev  => [...prev, dados]);
-    selecionandorepositorios('');
+    selecionandorepositorios( prev  => [...prev, data]);
+    selecionandoReposAtual('');
     return
     };
   };
