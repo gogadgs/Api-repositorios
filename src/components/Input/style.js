@@ -5,7 +5,7 @@ export const InputConteudo = styled.div`
 border :1px solid #FAFAFA;
 border-radius: 20px;
 height:62px;
-width:87%;
+max-width:80%;
 margin:20px 2px;
 
 
@@ -13,12 +13,14 @@ margin:20px 2px;
 input{
     background:transparent;
     border:0 transparent #FAFAFA;
-    width:93%;
+    max-width:80%;
     height:62px;
     padding:0 20px;
     color:#ffffff;
     font-size:18px;
     border-radius:20px;
+    text-align:center;
+    margin:0rem;
     
     
 

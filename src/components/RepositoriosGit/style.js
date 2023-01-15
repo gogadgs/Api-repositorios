@@ -71,7 +71,7 @@ export const RepositoriosConteudo = styled.div`
         hr{
             color:#f589;
             margin:1rem 0;
-            width:100%;
+           
            
         }
     
