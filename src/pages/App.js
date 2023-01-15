@@ -1,10 +1,10 @@
-import gitLogo from './assets/logo-github.png';
-import { Conteudo } from './pages/styles';
-import {Input} from './components/Input';
-import {Button} from './components/Button';
+import gitLogo from '../assets/logo-github.png';
+import { Conteudo } from './styles';
+import {Input} from '../components/Input';
+import {Button} from '../components/Button';
 import {useState} from 'react';
-import {api} from './service/api';
-import Repositorios from './components/RepositoriosGit';
+import {api} from '../service/api';
+import Repositorios from '../components/RepositoriosGit';
 
 
 const  App = ()=> {
