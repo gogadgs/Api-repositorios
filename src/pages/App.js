@@ -21,6 +21,7 @@ const procurandoRepositorioUsuario = async ()=>{
     
     const repositorioExiste = repositorios.find(repositorio => repositorio.id === data.id)
 
+    
     if(!repositorioExiste){
     
     selecionandorepositorios( prev  => [...prev, data]);
@@ -31,21 +32,26 @@ const procurandoRepositorioUsuario = async ()=>{
 
   alert('repositorio nao encontrado');
 
-}
-
-const removerRepositorio = (id)=>{
-  console.log(id);
+  
 
 }
+
+const removerRepositorio = (id) => {
+  const atualizandoRepositorio = repositorios.filter(repositorio => repositorio.id !== id);
+  selecionandorepositorios(atualizandoRepositorio);
+}
+
+
+
 
 
   return (
     <Conteudo>
       <img alt="logo" src={gitLogo} width={72} height={72}/>
       <Input value ={repositorioAtual} onChange ={(e)=>selecionandoReposAtual(e.target.value)}/>
-      <Button onClick={procurandoRepositorioUsuario}/>
+      <Button onClick={procurandoRepositorioUsuario}></Button>
 
-      {repositorios.map(repositorio => <Repositorios remover = {removerRepositorio} repositorio={repositorio} />)}
+      {repositorios.map(repositorio => <Repositorios removerRepositorio={removerRepositorio} repositorio={repositorio} />)}
     </Conteudo>
   );
 }

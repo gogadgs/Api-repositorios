@@ -5,7 +5,14 @@ import {InputConteudo} from './style';
 
 export const Input = ( {value , onChange}) => {
     return (
-       <InputConteudo><input value ={value} onChange={onChange} /></InputConteudo>
+        
+       <InputConteudo>
+       
+       <input value ={value} onChange={onChange} />
+       <p>Digite:usuario/nomeDoRepositorio</p>
+       
+       </InputConteudo>
+       
        
     
         
