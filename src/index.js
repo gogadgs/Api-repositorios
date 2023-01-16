@@ -9,7 +9,7 @@ import GlobalStyles from './global';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <HashRouter>
+  <HashRouter base='/'>
     <GlobalStyles />
     <App />
   </HashRouter>
