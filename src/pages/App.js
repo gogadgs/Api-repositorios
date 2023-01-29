@@ -1,4 +1,4 @@
-import gitLogo from '../assets/logo-github.png';
+import gitLogo from 'https://gogadgs.github.io/Api-repositorios/static/media/logo-github.a3f151acbf03855fd949.png';
 import { Conteudo } from './styles';
 import {Input} from '../components/Input';
 import {Button} from '../components/Button';
